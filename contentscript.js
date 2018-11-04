@@ -57,7 +57,7 @@ async function parse(site, result, i){
   stuff = stuff.replace(/\s+/g, " ");
   var sentiment = await makePost(stuff);
   var sentiment_val = await JSON.parse(sentiment)['documentSentiment']['score'];
-  // request.open("POST", "https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyAOxdXAtdGTHAtA_Tf_r9dPyK9DxKAGNcg", false);
+  // request.open("POST", "https://language.googleapis.com/v1/documents:analyzeEntities?key=" + key, false);
   // request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   // request.send(JSON.stringify({
   // 'document':{
@@ -142,7 +142,7 @@ function makeRequest(method, url) {
 function makePost(info) {
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyAOxdXAtdGTHAtA_Tf_r9dPyK9DxKAGNcg", true);
+        xhr.open("POST", "https://language.googleapis.com/v1/documents:analyzeSentiment?key=" + key, true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.onload = function () {
             if (this.status >= 200 && this.status < 300) {
