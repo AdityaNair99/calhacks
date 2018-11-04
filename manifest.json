@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Work",
   "permissions": ["storage", "tabs"],
-  "icons": { "128": "icon.png" },
+//  "icons": { "128": "icon.png" },
   "background": {
       "scripts": ["background.js"],
       "persistent": true
