@@ -2,8 +2,8 @@
 // chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 //   stuff = "literally nothing"
 //       var request = new XMLHttpRequest();
-//         // request.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAOxdXAtdGTHAtA_Tf_r9dPyK9DxKAGNcg", false);
-//         request.open("POST", "https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyAOxdXAtdGTHAtA_Tf_r9dPyK9DxKAGNcg", false);
+//         // request.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=" + key, false);
+//         request.open("POST", "https://language.googleapis.com/v1/documents:analyzeEntities?key=" + key, false);
 //         request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 //       //   request.send(JSON.stringify({
 //       //     'requests': [
