@@ -1,0 +1,19 @@
+{
+  "name": "An extension",
+  "version": "1.0",
+  "description": "Work",
+  "permissions": ["storage", "tabs"],
+  "icons": { "128": "icon.png" },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+  "content_scripts": [
+  {
+  "matches": ["*://www.google.com/*"],
+  "js": ["contentscript.js"],
+  "run_at": "document_end"
+  }
+],
+  "manifest_version": 2
+}
